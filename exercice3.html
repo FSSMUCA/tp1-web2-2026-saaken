@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>TP JavaScript</title>
+  </head>
+  <body>
+    <h1>Exercice 3 — Constantes</h1>
+
+    <script>
+      const TAUX_TVA = 0.20;
+
+      let prixHT = 150;
+
+      let montantTva = TAUX_TVA * prixHT;
+      let prixTTC = prixHT + montantTva;
+
+      console.log(`Prix HT : ${prixHT} € | TVA (20%) : ${montantTva} € | Prix TTC : ${prixTTC} €`);
+
+      TAUX_TVA = 0.25;
+    </script>
+  </body>
+</html>
