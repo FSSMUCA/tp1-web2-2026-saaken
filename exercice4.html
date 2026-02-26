@@ -1,0 +1,28 @@
+<!doctype html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <title>TP JavaScript</title>
+  </head>
+  <body>
+    <h1>Exercice 4 — Interactions avec l'utilisateur</h1>
+
+    <script>
+      let prenom = prompt("Quel est votre prénom ?");
+      let age = prompt("Quel est votre âge ?");
+      age = Number(age);
+
+      let anneeNaissance = 2025 - age;
+
+      alert(`Bonjour ${prenom} ! Vous êtes né(e) vers ${anneeNaissance}.`);
+
+      let voirConsole = confirm("Afficher dans la console ?");
+
+      if (voirConsole) {
+        console.log("Prénom :", prenom);
+        console.log("Âge :", age);
+        console.log("Année de naissance approximative :", anneeNaissance);
+      }
+    </script>
+  </body>
+</html>
